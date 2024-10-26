@@ -7,7 +7,7 @@
 
 ## Objectives
 
-- Get familiar with the **SOLID principles**.
+- Get familiar with **creational patterns**.
 - Implement at least **3 creational design patterns** for a chosen domain (Online Bookstore Management):
     1. **Factory Method**.
     2. **Singleton**.
