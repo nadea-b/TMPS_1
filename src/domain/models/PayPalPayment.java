@@ -1,4 +1,4 @@
-package adapters;
+package domain.models;
 
 public class PayPalPayment {
     public void makePayment(double amount) {

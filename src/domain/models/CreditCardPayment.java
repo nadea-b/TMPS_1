@@ -1,4 +1,6 @@
-package adapters;
+package domain.models;
+
+import adapters.Payment;
 
 public class CreditCardPayment implements Payment {
     public void process(double amount) {

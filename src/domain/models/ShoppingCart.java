@@ -7,7 +7,7 @@ public class ShoppingCart {
     private static ShoppingCart instance;
     private List<Book> books;
 
-    private ShoppingCart() {
+    public ShoppingCart() {
         books = new ArrayList<>();
     }
 
@@ -29,4 +29,14 @@ public class ShoppingCart {
     public List<Book> getBooks() {
         return books;
     }
+
+    // Calculate and return the total price of all books in the cart
+    public double getTotal() {
+        double total = 0.0;
+        for (Book book : books) {
+            total += book.getPrice();
+        }
+        return total;
+    }
+
 }
