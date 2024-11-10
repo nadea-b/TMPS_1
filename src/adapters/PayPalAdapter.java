@@ -1,15 +1,17 @@
 package adapters;
 
-// Adapter class that adapts ExternalPaymentProcessor to Payment interface
-public class PaymentAdapter implements Payment {
-    private ExternalPaymentProcessor externalProcessor;
+import domain.models.PayPalPayment;
 
-    public PaymentAdapter(ExternalPaymentProcessor externalProcessor) {
-        this.externalProcessor = externalProcessor;
+// Adapter class that adapts ExternalPaymentProcessor to Payment interface
+public class PayPalAdapter implements Payment {
+    private PayPalPayment paypalPayment;
+
+    public PayPalAdapter(PayPalPayment paypalPayment) {
+        this.paypalPayment = paypalPayment;
     }
 
     @Override
     public void process(double amount) {
-        externalProcessor.makePayment(amount);
+        paypalPayment.makePayment(amount);  // Delegating to the PayPalPayment object
     }
 }
