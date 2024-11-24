@@ -8,7 +8,7 @@
 ## Objectives
 
 - To study and understand the **Behavioral Design Patterns**.
-- As a continuation of the previous laboratory work, think about what communication between software entities might be involed in the system.
+- As a continuation of the previous laboratory work, to think about what communication between software entities might be involed in the system.
 - Implement at least 1 behavioral design pattern in the project (Online Bookstore Management):
     1. **Command Pattern**.
 
